@@ -17,9 +17,9 @@ public class SalesManager {
         return max;
     }
 
-    public int trimmedMean() {
-        int[] copy = sales.clone();
-        int a = 0;
+    public long trimmedMean() {
+        long[] copy = sales.clone();
+        long a = 0;
         Arrays.sort(copy);
         copy[0] = 0;
         copy[copy.length - 1] = 0;
